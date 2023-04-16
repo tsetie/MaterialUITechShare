@@ -6,9 +6,6 @@ import BottomNavBar from './BottomNavBar';
 import UserPostsList from './PostsList';
 
 import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-
-
 
 export default function MainLayout() {
     return (

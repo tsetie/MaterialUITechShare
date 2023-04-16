@@ -3,13 +3,15 @@ import * as React from 'react';
 import { useState } from 'react';
 
 // Mui imports
-import { Card, Avatar, Button, Typography, Stack, Container, Box, Paper, CardActionArea } from '@mui/material';
+import { CssBaseline, Card, Avatar, Button, Typography, Stack, Container, Box, Paper, CardActionArea } from '@mui/material';
 import CardHeader from '@mui/material/CardHeader';
+import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import IconButton from '@mui/material/IconButton';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import { red } from '@mui/material/colors';
 
 // --------------------------------------------------------------------
 // --------------------------------------------------------------------
@@ -51,46 +53,49 @@ function LikeWidget() {
 // ----------------------------------------------------------------------------------------------------------------------------------------
 // Userpost will be made up of 1. Name, profile pic 2. (New component) post content (status and/or image), 3. Like button & like count
 export default function UserPost( {author, imagePath, date, description} ) {
-    return (
-      <div>
 
-        {/* MUI Card component acts as the main user post container */}
-        <Card sx={{ maxWidth: '100%' }}>
+  return (
+    <>
+      {/* CSSBaseline: MUI's version of a CSS reset, similar to Normalize.css
+          to provide more styling consistency across browsers */}
+      <CssBaseline/>
+      <Card sx={{ maxWidth: "60vh", maxHeight: '100%' }}>
+        
+        {/* Username & date */}
+        <CardHeader
+          avatar={
+            <Avatar aria-label="userPost">
+              {author[0]}
+            </Avatar>
+          }
+          action={
+            <IconButton aria-label="settings">
+              <MoreHorizIcon />
+            </IconButton>
+          }
+          title={author}    // Post author (who made it...)
+          subheader={date}  // Post date (how many days ago...)
+        />
 
-            {/* 1.) User Post Header */}
-            <CardHeader
-                avatar={
-                <Avatar aria-label="user">
-                    
-                </Avatar>
-                }
-                action={
-                <IconButton aria-label="settings">
-                    <MoreHorizIcon />  
-                </IconButton>
-                }
-                title={author}      // Post author (who made it...)
-                subheader={date}    // Post date (how many days ago...)
-            />
+        {/* Picture */}
+        <CardMedia
+          sx={{bgcolor: '#222222', minHeight: "40vh", maxWidth: "900px"}}
+          component="img"
+          image={imagePath}
+          alt="User post image"
+        />
 
-            {/* User Post Picture/Content */}
-            <CardMedia
-                sx={{bgcolor: '#9999', minHeight: "45vh", maxWidth: "900px"}}
-                component="img"
-                image={imagePath}
-                alt="User Post Image"
-            />
+        {/* Description */}
+        <CardContent>
+          <LikeWidget/>
+          <Typography variant="body2" color="text.secondary">
+            This impressive paella is a perfect party dish and a fun meal to cook
+            together with your guests. Add 1 cup of frozen peas along with the mussels,
+            if you like.
+          </Typography>
+        </CardContent>
 
-            {/* Any user post interaction */}
-            <CardActionArea>
-                <ReactionPanel/>
-                <Box sx={{m: 1}}>
-                    <Typography variant="h8"> {description} </Typography>
-                </Box>
-          </CardActionArea>  
-
-        </Card>
-  
-      </div>
-    )
+      </Card>
+    </>
+  );
 }

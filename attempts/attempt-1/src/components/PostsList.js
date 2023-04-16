@@ -25,7 +25,7 @@ export default function UserPostsList() {
             justifyContent="center"
             style={{ minHeight: '90vh', marginBottom: "10vh"}}
             >
-            <Grid item xs={3} style={{ minHeight: '90vh', marginBottom: "10vh", maxWidth: '700px'}}>
+            <Grid item xs={3} style={{ minHeight: '90vh', maxWidth: '700px'}}>
 
                 <Userpost 
                     author="Ray Geoletti"  

@@ -31,12 +31,12 @@ export default function TopBar() {
           </IconButton>
           
           {/* Header title text */}
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" sx={{ flexGrow: 1 }}>
             Photogram
           </Typography>
         
           {/* Right most button */}
-          <IconButton color="inherit">
+          <IconButton color="primary">
             <SendIcon/>
           </IconButton>
 
