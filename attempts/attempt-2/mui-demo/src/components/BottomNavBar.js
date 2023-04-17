@@ -22,7 +22,7 @@ export default function FixedBottomNavigation() {
         {/* CSSBaseline: MUI's version of a CSS reset, similar to Normalize.css
             to provide more styling consistency across browsers */}
         <CssBaseline/>
-        <Box sx={{ pb: 7 }}>
+        <Box sx={{ pb: 7 } }>
         <CssBaseline />
         <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
             <BottomNavigation

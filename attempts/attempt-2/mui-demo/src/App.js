@@ -1,5 +1,7 @@
 import './styles/App.css';
 
+import StyledEngineProvider from "@mui/material/StyledEngineProvider";
+
 import CssBaseline from '@mui/material/CssBaseline';
 
 import TopBar from './components/TopBar';
@@ -19,9 +21,10 @@ function App() {
 
       {/* 2.) Row of social avatars */}
       <Stories/>
+    
 
       {/* 3.) Scrollable content w/ images, likes, text description */}
-      <UserPostsList/>
+      <UserPostsList />
 
       {/* 4.) Bottom navigation w/ icons */}
       <BottomNavBar/>
