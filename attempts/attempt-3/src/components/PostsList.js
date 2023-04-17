@@ -8,17 +8,18 @@ export default function PostsList() {
     <>
       <CssBaseline/>
       {/* Make a centered container */}
-      <Container sx={{ 
-        height: '100vh', 
-        bgcolor: 'royalblue', 
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}>
+      {/* 3.) Scrollable content w/ images, likes, text description */}
+      <Box
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        minHeight="100vh"
+      >
 
         <UserPost/>
         
-      </Container>
+      </Box>
 
     </>
   );

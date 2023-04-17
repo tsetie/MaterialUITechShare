@@ -61,39 +61,7 @@ export default function UserPost( {author, imagePath, date, description} ) {
       <CssBaseline/>
       <Card sx={{ maxWidth: "60vh", maxHeight: '100%' }}>
         
-        {/* Username & date */}
-        <CardHeader
-          avatar={
-            <Avatar aria-label="userPost">
-              {author[0]}
-            </Avatar>
-          }
-          action={
-            <IconButton aria-label="settings">
-              <MoreHorizIcon />
-            </IconButton>
-          }
-          title={author}    // Post author (who made it...)
-          subheader={date}  // Post date (how many days ago...)
-        />
-
-        {/* Picture */}
-        <CardMedia
-          sx={{bgcolor: '#222222', minHeight: "40vh", maxWidth: "900px"}}
-          component="img"
-          image={imagePath}
-          alt="User post image"
-        />
-
-        {/* Description */}
-        <CardContent>
-          <LikeWidget/>
-          <Typography variant="body2" color="text.secondary">
-            This impressive paella is a perfect party dish and a fun meal to cook
-            together with your guests. Add 1 cup of frozen peas along with the mussels,
-            if you like.
-          </Typography>
-        </CardContent>
+       
 
       </Card>
     </>
