@@ -1,4 +1,4 @@
-# Material UI
+# Material UI(MUI)
 
 ## What is Material UI? 
 ##### - A UI Component library designers & developers can use to build React applications.
@@ -9,7 +9,7 @@
 ##### - Material UI provides developers with an open source package of pre-built components
 ##### - Main focus is responsiveness, mobile-first design, and keeping a neutral overall look 
 
-## Why use a component library like MUI? 
+## Why use a component library like Material UI? 
 ##### - Huge catalog of responsive customizable components 
 ##### - Speeds up the development process
 ##### - Extensive documentation & community 
