@@ -10,7 +10,7 @@ function App() {
       {/* <CssBaseline/> */}
 
       {/* 1.) Top header */}
-      <TopBar/>
+      {/* <TopBar/> */}
       
       {/* 2.) Social header */}
 
