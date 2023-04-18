@@ -75,16 +75,16 @@ export default function UserPostContainer() {
 }
 
 
-const posts = [
-  {
-      author: "Ray Geoletti",
-      image: {photographyImage},
-      date: "6h ago",
-      description: `From fairest creatures we desire increase,
-                  That thereby beauty's rose might never die,
-                  But as the riper should by time decease,
-                  His tender heir might bear his memory...`
-  },
+// const posts = [
+//   {
+//       author: "Ray Geoletti",
+//       image: {photographyImage},
+//       date: "6h ago",
+//       description: `From fairest creatures we desire increase,
+//                   That thereby beauty's rose might never die,
+//                   But as the riper should by time decease,
+//                   His tender heir might bear his memory...`
+//   },
   // {
   //     author: "Arts and Crafts",
   //     image: 
@@ -115,4 +115,4 @@ const posts = [
   //     description=`Today I got a close up of some jaguars. It was really exciting but I was 
   //                 suuupper nervous, like it was purring on me just like a cat!`
   // }, 
-];
+// ];

@@ -12,8 +12,8 @@ import SendIcon from '@mui/icons-material/Send';
 
 export default function TopBar() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box sx={{ flexGrow: 1, pt: 7 }}>
+      <AppBar position="fixed">
         <Toolbar>
 
         {/* Logo button */}
