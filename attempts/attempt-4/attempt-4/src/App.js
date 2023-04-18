@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+import { CssBaseline, Box, Container, Typography } from '@mui/material';
+
+import TopBar from './components/TopBar';
+import Stories from './components/Stories';
+import BottomBar from './components/BottomBar';
+import UserPostContainer from './components/UserPostContainer';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <CssBaseline/>
+
+      {/* 1.) Top header */}
+      <TopBar/>
+
+      {/* 2.) Stories */}
+      <Stories/>
+
+      {/* 3.) Main scrollable section */}
+      <UserPostContainer/>
+
+      {/* 4.) Bottom navigation */}
+      <BottomBar/>
+      
+    </>
+  )
 }
 
 export default App;
