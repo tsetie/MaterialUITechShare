@@ -14,7 +14,7 @@
 ##### - Speeds up the development process
 ##### - Extensive documentation & community 
 
-## How to use Material UI
+## Material UI Setup
 
 ##### Default installation
 ```
