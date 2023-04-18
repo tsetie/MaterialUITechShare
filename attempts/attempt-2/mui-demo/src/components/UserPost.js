@@ -15,19 +15,6 @@ import { red } from '@mui/material/colors';
 
 // --------------------------------------------------------------------
 // --------------------------------------------------------------------
-// Function to handle raising like counter
-function ReactionPanel() {
-    return (
-      <>
-        <Stack m={1.5}>
-          <LikeWidget/>
-        </Stack>
-      </>
-  
-    );
-  }
-// --------------------------------------------------------------------
-// --------------------------------------------------------------------
 // Small like widget to see if user has liked a post
 function LikeWidget() {
     // Logic to handle user likes (toggle, increment, decrement)
@@ -89,9 +76,7 @@ export default function UserPost( {author, imagePath, date, description} ) {
         <CardContent>
           <LikeWidget/>
           <Typography variant="body2" color="text.secondary">
-            This impressive paella is a perfect party dish and a fun meal to cook
-            together with your guests. Add 1 cup of frozen peas along with the mussels,
-            if you like.
+            {description}
           </Typography>
         </CardContent>
 
