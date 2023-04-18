@@ -1,4 +1,4 @@
-# Material UI(MUI)
+# Material UI (MUI)
 
 ## What is Material UI? 
 ##### - A UI Component library designers & developers can use to build React applications.
