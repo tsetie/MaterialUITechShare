@@ -9,12 +9,12 @@ import ArchiveIcon from '@mui/icons-material/Archive';
 import Paper from '@mui/material/Paper';
 
 
-export default function FixedBottomNavigation() {
+
+export default function BottomBar() {
   const [value, setValue] = React.useState(0);
-  const ref = React.useRef(null);
 
   return (
-    <Box sx={{ pb: 7 }} ref={ref}>
+    <Box sx={{ pb: 7 }}>
       <CssBaseline />
   
       <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
@@ -25,9 +25,10 @@ export default function FixedBottomNavigation() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-          <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-          <BottomNavigationAction label="Archive" icon={<ArchiveIcon />} />
+          <BottomNavigationAction label="Home" icon={<RestoreIcon />} />
+          <BottomNavigationAction label="Search" icon={<FavoriteIcon />} />
+          <BottomNavigationAction label="Reels" icon={<ArchiveIcon />} />
+          <BottomNavigationAction label="Account" icon={<ArchiveIcon />} />
         </BottomNavigation>
       </Paper>
     </Box>

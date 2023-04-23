@@ -17,7 +17,7 @@ const theme = createTheme({
         },
     },
 
-    // Can override all styles here
+    // Can override all sty`les here
     components: {
         MuiAvatar: {
             styleOverrides: {
