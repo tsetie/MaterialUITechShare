@@ -6,7 +6,7 @@ export default function Basics() {
         <>
         <Box 
             sx={{
-                height: '50vh',
+                height: '46vh',
                 m: 1,
                 p: 1,
                 bgcolor: "#000055",
@@ -21,7 +21,7 @@ export default function Basics() {
 
         <div
             style={{
-            height: '100vh',
+            height: '46vh',
             margin: '8px',
             padding: '8px',
             backgroundColor: "#000088",

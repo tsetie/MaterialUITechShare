@@ -1,7 +1,5 @@
 import Basics from "./components/Basics";
 
-
-
 function App() {
   return (
     <>
