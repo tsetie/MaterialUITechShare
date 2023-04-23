@@ -20,7 +20,7 @@ export default function UserPost( { author, image, date, description } ) {
     <Card sx={{ maxWidth: 600, mt: {md: 5} }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+          <Avatar sx={{ bgcolor: red[500] }}>
             R
           </Avatar>
         }

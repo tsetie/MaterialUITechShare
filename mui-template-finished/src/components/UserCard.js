@@ -1,50 +1,48 @@
 import * as React from 'react';
+import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
+import CardActions from '@mui/material/CardActions';
+import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
-import LikeWidget from './LikeWidget';
-
-// ----------------------------------------------------------------------------------------------------------------------------------------
-// Userpost will be made up of 1. Name, profile pic 2. (New component) post content (status and/or image), 3. Like button & like count
-
-export default function UserPost( { author, image, date, description } ) {
+export default function UserCard( {author, date, image, description} ) {
 
   return (
-    <Card sx={{ maxWidth: 600, my: {md: 5} }}>
+    <Card sx={{ maxWidth: {xs: '100%', sm: '75%', md: '50%' } }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }}>
-            R
+            {author[0]}
           </Avatar>
         }
         action={
           <IconButton aria-label="settings">
-            <MoreVertIcon />
+            <MoreHorizIcon />
           </IconButton>
         }
         title={author}
         subheader={date}
       />
+      
       <CardMedia
         component="img"
-        height="100%"
         image={image}
         alt="User post image"
       />
       
       <CardContent>
-        <LikeWidget/>
         <Typography variant="body2" color="text.secondary">
           {description}
         </Typography>
       </CardContent>
+     
     </Card>
   );
 }

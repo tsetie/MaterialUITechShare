@@ -9,23 +9,22 @@ export default function Basics() {
                 height: '46vh',
                 m: 1,
                 p: 1,
-                bgcolor: "#000055",
+                bgcolor: "#007700",
                 color: '#FFFF',
                 "&:hover": { bgcolor: 'red' }
             }}>
-            <Typography variant="h6">
+            <Typography variant="h2">
                 Hello Box!
             </Typography>
-
         </Box>
 
         <div
             style={{
-            height: '46vh',
-            margin: '8px',
-            padding: '8px',
-            backgroundColor: "#000088",
-            color: '#FFFF'
+                height: '46vh',
+                margin: '8px',
+                padding: '8px',
+                backgroundColor: "#000088",
+                color: '#FFFF'
             }}
         >
             <p>Hello div!</p>

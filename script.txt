@@ -1,9 +1,10 @@
-Script
+_____________________________________________________________________________________
 
+Script
 _____________________________________________________________________________________
 
 *** Thesis ***
-"Yeah so now we're getting into the actual 'How' section of things."
+"Yeah, so let's actually learn how to do some of this stuff, right."
 "In order to learn to use MUI, we'll be going over three main things."
 1.) The simple initial setup 
 2.) Some core MUI basics
@@ -11,13 +12,16 @@ ________________________________________________________________________________
 _____________________________________________________________________________________
 
 *** Setup/installation ***
+_____________________________________________________________________________________
 
-"Now, for the setup it's really easy, we'll just use a few command line installs."
+"Now, for the setup it's really easy, we'll just use a few command line installations"
 "Since MUI offers a lot of different integration options like for example Tailwind,
 to keep things simple we'll just use the default setup."
 "Our first installation is going to be: "
+_____________________________________________________________________________________
 
-- Default settings
+* Default settings
+
 1) npm install @mui/material @emotion/react @emotion/styled
 	- mui/material ---> library of MUI components
 	- emotion/react --> 
@@ -27,20 +31,139 @@ to keep things simple we'll just use the default setup."
 
 3) npm install @mui/icons-material
 	- MUI catalog of icons we'll be using throughout
+
+"I've already installed all of these so you guys don't have to wait around
+scratching your heads"
 _____________________________________________________________________________________
 
 *** Basics ***
+_____________________________________________________________________________________
 
 "Now that we have some of the initial setup covered, let's dive right into some
 basics!"
+_____________________________________________________________________________________
+
+ 1) Overview of navigating the documentation
+_____________________________________________________________________________________
+"I think one of the main skills you need when using MUI is simply put, knowing how
+to navigate the documentation."
+
+[Show list of column & then show home mui page]
+
+"So, past the getting started section on this left column, MUI also lists all of the 
+MUI components here, which are just like those widgets we saw here." 
+
+[Scroll around components list, and go to TEXT FIELD section]
+
+"As you can see, there's this huge list and if I just click one to give you a visual,
+like for example let's just check out the input Component, the docs give us a ton of 
+different examples, each with an interactive preview."
+
+"For example, we have different looks and functionalities like here we got multi-line,
+select drop downs, icon text inputs as well."
+
+"Also one of the great things I like is that the complete source code in both 
+javascript and typescript for any typescript fans."
+
+"And all of the components have a similar documentation page as well, with things like
+each component's important props as well!"
+_____________________________________________________________________________________
+
+ 2) Code basics
+_____________________________________________________________________________________
+"So now that we kind of have a basic grasp of what the documentation looks like,
+let's start doin' some actual code."
+
+"I think for me personally, figuring out the syntax for any new software is like 
+95% of where I get stuck and I then end up fiddling for hours until it magically works, 
+so let's just get that out of the way."
+
+"On the left side here I have some template code from the repo, and its mostly 
+an empty npx create-react-app project with the exception of a few components 
+we'll be building later."
 
 [Uncomment "Basics.js" and describe differences to audience]
 
-1) "
-2)
-3)
+"For now, let's just take a look at the main differences between what's offered
+by MUI and what already exists in default JSX."
+
+"As you can see here, in the browser I have two different colored boxes." 
+
+"On the left, I have the code that's responsible for what you see on the right,
+ where I have a MUI box vs a HTML I guess it's technically JSX div."
+_____________________________________________________________________________________
+
+MUI vs JSX
+_____________________________________________________________________________________
+1) Box == div
+2) sx == JSX style prop
+3) within sx there are convenient shorthands 
+	- Save time
+	- m for margin
+	- p for padding
+	- bgcolor for backgroundColor
+	- Access to easy CSS selectors
+4) Built-in sx units are each 8px
+	- I don't really know why 8 specifically, but maybe Google just likes 8px
+	- But you can still use other units but 
+5) Typography == p tag
+	- 'Go to default' for all things 'text'
+	- By default it is a p tag, but can set text type with 'variant' prop
 
 _____________________________________________________________________________________
 
-*** Layout section ***
+Transition to layout
 
+"And yeah, these are just some of the syntax you need to know."
+
+"And from this, let's actually get into making the simple mobile layout,
+which is just, so you have a frame of reference, this simple Instagram clone."
+
+_____________________________________________________________________________________
+_____________________________________________________________________________________
+
+*** Layout section ***
+_____________________________________________________________________________________
+
+1.) Top header
+	- Run through from 'AppBar' and mui icons
+
+2.) Bottom navigation // uncomment time!
+	- Explain same process as top header, Kluver mentioned of: copy paste edit read
+	- Explain how we got here by looking at bottom nav source code
+		- Deleting any junk code we don't need
+		- Getting icons we want
+		- Show labels
+
+3.) Stories
+	- "I don't really use instgram but apparently they have these circles
+	at the top where you can see short video posts by user."
+	- Stack
+		- Just fancy way of having a flexbox list with props
+			- direction: 'flex direction' 
+			- spacing: 'space between each thing in stack'
+		- Inline styling: 
+	- Avatar
+		- Just a cirle that you can shove an image in
+		- And we'll use this for the stories' user icons
+
+4.) Scrollable content
+	- Card
+	- Get rid of any unecessary bloat
+	- Edit sx responsive tag for width
+	- Pass in and paste hard-coded props
+
+_____________________________________________________________________________________
+
+Transition to conclusion -
+_____________________________________________________________________________________
+
+Brief summary of what we just learned:
+
+1) The basic set up 
+2) How to navigate the documentation
+3) A few of the many Components in the MUI library
+4) Different methods of styling
+5) How to work with the documentation to set up a simple layout
+
+* Pass to Ishika for the wrap up.

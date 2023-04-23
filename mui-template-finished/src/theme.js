@@ -7,7 +7,7 @@ const theme = createTheme({
     palette: {
         primary: {
             light: blue[200],
-            main:  blue[300],
+            main:  red[700],
             dark: '#002884',
         },
         secondary: {
@@ -16,8 +16,7 @@ const theme = createTheme({
             dark: '#ba000d',
         },
     },
-
-    // Can override all sty`les here
+    // Can override all styles here
     components: {
         MuiAvatar: {
             styleOverrides: {
