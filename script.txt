@@ -1,0 +1,46 @@
+Script
+
+_____________________________________________________________________________________
+
+*** Thesis ***
+"Yeah so now we're getting into the actual 'How' section of things."
+"In order to learn to use MUI, we'll be going over three main things."
+1.) The simple initial setup 
+2.) Some core MUI basics
+3.) From these things build a simple mobile web layout
+_____________________________________________________________________________________
+
+*** Setup/installation ***
+
+"Now, for the setup it's really easy, we'll just use a few command line installs."
+"Since MUI offers a lot of different integration options like for example Tailwind,
+to keep things simple we'll just use the default setup."
+"Our first installation is going to be: "
+
+- Default settings
+1) npm install @mui/material @emotion/react @emotion/styled
+	- mui/material ---> library of MUI components
+	- emotion/react --> 
+	- emotion/styled -> Emotion JS styling engine previous group had covered
+2) npm install @fontsource/roboto
+	- MUI's goto default 
+
+3) npm install @mui/icons-material
+	- MUI catalog of icons we'll be using throughout
+_____________________________________________________________________________________
+
+*** Basics ***
+
+"Now that we have some of the initial setup covered, let's dive right into some
+basics!"
+
+[Uncomment "Basics.js" and describe differences to audience]
+
+1) "
+2)
+3)
+
+_____________________________________________________________________________________
+
+*** Layout section ***
+
