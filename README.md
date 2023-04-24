@@ -1,7 +1,7 @@
 # Material UI (MUI)
 
 ## What is Material UI? 
-#### - A UI Component library developers can use to build React applications quickly. 
+- A UI Component library developers can use to build React applications quickly. 
 #### - One of reacts most popular UI frameworks
 
 ## Background on Material UI
