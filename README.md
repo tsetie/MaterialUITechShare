@@ -1,7 +1,7 @@
 # Material UI (MUI)
 
 ## What is Material UI?
-- A UI Component library to build React applications quickly
+- A UI Component library that builds React applications quickly
 - One of reacts most popular UI frameworks
 - Material UI is a design system made by Google with standards and guidelines on website text, shapes, shadows, and spacing
 - Main focus is responsiveness, mobile-first design, and keeping a neutral overall look 
