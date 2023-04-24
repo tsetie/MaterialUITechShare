@@ -32,4 +32,4 @@ npm install @mui/icons-material
 
 ## Layout we will create using MUI
 
-![final layout](/readMeimages/home1.jpg)
+![final layout](/instagramMini.png)
